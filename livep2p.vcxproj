@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{987A6273-F4B7-4496-B55A-57563575CBCC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>livep2p</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;HAVE_CONFIG_H;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>libevent\build-win\include;libevent\include;libevent\compat;libevent;libevent\WIN32-Code;zlib;base;rudp;tsdemux</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Ws2_32.lib;Iphlpapi.lib;Psapi.lib;Userenv.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>libevent\build-win\include;libevent\include;libevent\compat;libevent;libevent\WIN32-Code;zlib;base;rudp;tsdemux</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base\aes.h" />
+    <ClInclude Include="base\app_log.h" />
+    <ClInclude Include="base\btype.h" />
+    <ClInclude Include="base\cJSON.h" />
+    <ClInclude Include="base\uthash.h" />
+    <ClInclude Include="p2papp.h" />
+    <ClInclude Include="p2pcache.h" />
+    <ClInclude Include="p2phttpsrv.h" />
+    <ClInclude Include="p2pm3u8.h" />
+    <ClInclude Include="p2pmgmt.h" />
+    <ClInclude Include="p2pblock.h" />
+    <ClInclude Include="p2ptcpsrv.h" />
+    <ClInclude Include="p2pmsg.h" />
+    <ClInclude Include="p2ppeer.h" />
+    <ClInclude Include="p2psched.h" />
+    <ClInclude Include="p2ptrksrv.h" />
+    <ClInclude Include="rudp\ikcp.h" />
+    <ClInclude Include="rudp\rudp.h" />
+    <ClInclude Include="rudp\rudppeer.h" />
+    <ClInclude Include="rudp\rudpsess.h" />
+    <ClInclude Include="rudp\rudpsock.h" />
+    <ClInclude Include="rudp\rudpstat.h" />
+    <ClInclude Include="rudp\rudpworker.h" />
+    <ClInclude Include="tsdemux\common.h" />
+    <ClInclude Include="tsdemux\descriptors.h" />
+    <ClInclude Include="tsdemux\pat.h" />
+    <ClInclude Include="tsdemux\pes.h" />
+    <ClInclude Include="tsdemux\pmt.h" />
+    <ClInclude Include="tsdemux\psi.h" />
+    <ClInclude Include="tsdemux\ts.h" />
+    <ClInclude Include="tsdemux\ts_psi_mgr.h" />
+    <ClInclude Include="tsdemux\ts_psi_pat.h" />
+    <ClInclude Include="tsdemux\ts_psi_pmt.h" />
+    <ClInclude Include="tsdemux\ts_stream.h" />
+    <ClInclude Include="zlib\crc32.h" />
+    <ClInclude Include="zlib\crypt.h" />
+    <ClInclude Include="zlib\deflate.h" />
+    <ClInclude Include="zlib\gzguts.h" />
+    <ClInclude Include="zlib\gzip.h" />
+    <ClInclude Include="zlib\inffast.h" />
+    <ClInclude Include="zlib\inffixed.h" />
+    <ClInclude Include="zlib\inflate.h" />
+    <ClInclude Include="zlib\inftrees.h" />
+    <ClInclude Include="zlib\ioapi.h" />
+    <ClInclude Include="zlib\iowin32.h" />
+    <ClInclude Include="zlib\mztools.h" />
+    <ClInclude Include="zlib\symbol.h" />
+    <ClInclude Include="zlib\trees.h" />
+    <ClInclude Include="zlib\unzip.h" />
+    <ClInclude Include="zlib\zconf.h" />
+    <ClInclude Include="zlib\zip.h" />
+    <ClInclude Include="zlib\zlib.h" />
+    <ClInclude Include="zlib\zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base\aes.c" />
+    <ClCompile Include="base\app_log.c" />
+    <ClCompile Include="base\cJSON.c" />
+    <ClCompile Include="base\memstat.c" />
+    <ClCompile Include="libevent\buffer.c" />
+    <ClCompile Include="libevent\bufferevent.c" />
+    <ClCompile Include="libevent\bufferevent_filter.c" />
+    <ClCompile Include="libevent\bufferevent_pair.c" />
+    <ClCompile Include="libevent\bufferevent_ratelim.c" />
+    <ClCompile Include="libevent\bufferevent_sock.c" />
+    <ClCompile Include="libevent\event.c" />
+    <ClCompile Include="libevent\evmap.c" />
+    <ClCompile Include="libevent\evthread.c" />
+    <ClCompile Include="libevent\evutil.c" />
+    <ClCompile Include="libevent\evutil_rand.c" />
+    <ClCompile Include="libevent\evutil_time.c" />
+    <ClCompile Include="libevent\listener.c" />
+    <ClCompile Include="libevent\log.c" />
+    <ClCompile Include="libevent\signal.c" />
+    <ClCompile Include="libevent\strlcpy.c" />
+    <ClCompile Include="libevent\evthread_win32.c" />
+    <ClCompile Include="libevent\buffer_iocp.c" />
+    <ClCompile Include="libevent\bufferevent_async.c" />
+    <ClCompile Include="libevent\event_iocp.c" />
+    <ClCompile Include="libevent\win32select.c" />
+    <ClCompile Include="libevent\event_tagging.c" />
+    <ClCompile Include="libevent\http.c" />
+    <ClCompile Include="libevent\evdns.c" />
+    <ClCompile Include="libevent\evrpc.c" />
+    <ClCompile Include="p2pcache.c" />
+    <ClCompile Include="p2phttpsrv.c" />
+    <ClCompile Include="p2pm3u8.c" />
+    <ClCompile Include="p2pmgmt.c" />
+    <ClCompile Include="p2pblock.c" />
+    <ClCompile Include="p2ptcpsrv.c" />
+    <ClCompile Include="p2pmsg.c" />
+    <ClCompile Include="p2psched.c" />
+    <ClCompile Include="p2papp.c" />
+    <ClCompile Include="p2ppeer.c" />
+    <ClCompile Include="p2ptrksrv.c" />
+    <ClCompile Include="rudp\ikcp.c" />
+    <ClCompile Include="rudp\rudp.c" />
+    <ClCompile Include="rudp\rudppeer.c" />
+    <ClCompile Include="rudp\rudpsess.c" />
+    <ClCompile Include="rudp\rudpsock.c" />
+    <ClCompile Include="rudp\rudpstat.c" />
+    <ClCompile Include="rudp\rudpworker.c" />
+    <ClCompile Include="tsdemux\ts_psi_mgr.c" />
+    <ClCompile Include="tsdemux\ts_psi_pat.c" />
+    <ClCompile Include="tsdemux\ts_psi_pmt.c" />
+    <ClCompile Include="tsdemux\ts_stream.c" />
+    <ClCompile Include="zlib\adler32.c" />
+    <ClCompile Include="zlib\compress.c" />
+    <ClCompile Include="zlib\crc32.c" />
+    <ClCompile Include="zlib\deflate.c" />
+    <ClCompile Include="zlib\gzclose.c" />
+    <ClCompile Include="zlib\gzip.c" />
+    <ClCompile Include="zlib\gzlib.c" />
+    <ClCompile Include="zlib\gzread.c" />
+    <ClCompile Include="zlib\gzwrite.c" />
+    <ClCompile Include="zlib\infback.c" />
+    <ClCompile Include="zlib\inffast.c" />
+    <ClCompile Include="zlib\inflate.c" />
+    <ClCompile Include="zlib\inftrees.c" />
+    <ClCompile Include="zlib\ioapi.c" />
+    <ClCompile Include="zlib\iowin32.c" />
+    <ClCompile Include="zlib\miniunz.c" />
+    <ClCompile Include="zlib\mztools.c" />
+    <ClCompile Include="zlib\trees.c" />
+    <ClCompile Include="zlib\uncompr.c" />
+    <ClCompile Include="zlib\unzip.c" />
+    <ClCompile Include="zlib\zip.c" />
+    <ClCompile Include="zlib\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

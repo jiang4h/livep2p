@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="rudp">
+      <UniqueIdentifier>{6ec077cc-e508-4548-ae91-2c45f81cc139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zlib">
+      <UniqueIdentifier>{8e68b621-3937-4edb-aa59-3c833ca33205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{a2f33af5-fc1b-453b-b6ef-7e7ed8d44dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libevent">
+      <UniqueIdentifier>{2e71fee9-ea90-4f2d-b7b4-d8157c01cdf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libevent\core">
+      <UniqueIdentifier>{b905523e-d880-4a54-ac6a-53460692c383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libevent\extra">
+      <UniqueIdentifier>{c9f26b75-ebfc-42b5-85ae-c302aee3fc68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tsdemux">
+      <UniqueIdentifier>{fa32ee2d-35ae-4c78-8648-ffe708985193}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="zlib\crc32.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\crypt.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\deflate.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\gzguts.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\gzip.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inffast.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inffixed.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inflate.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\inftrees.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\ioapi.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\iowin32.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\mztools.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\symbol.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\trees.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\unzip.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zconf.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zip.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zlib.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib\zutil.h">
+      <Filter>zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="p2pcache.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="p2pmsg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="p2papp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="p2ppeer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="p2psched.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="base\uthash.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="p2ptcpsrv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="base\app_log.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="base\btype.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="rudp\ikcp.h">
+      <Filter>rudp</Filter>
+    </ClInclude>
+    <ClInclude Include="rudp\rudp.h">
+      <Filter>rudp</Filter>
+    </ClInclude>
+    <ClInclude Include="rudp\rudppeer.h">
+      <Filter>rudp</Filter>
+    </ClInclude>
+    <ClInclude Include="rudp\rudpsess.h">
+      <Filter>rudp</Filter>
+    </ClInclude>
+    <ClInclude Include="rudp\rudpsock.h">
+      <Filter>rudp</Filter>
+    </ClInclude>
+    <ClInclude Include="rudp\rudpstat.h">
+      <Filter>rudp</Filter>
+    </ClInclude>
+    <ClInclude Include="rudp\rudpworker.h">
+      <Filter>rudp</Filter>
+    </ClInclude>
+    <ClInclude Include="p2phttpsrv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="p2pmgmt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="base\cJSON.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="tsdemux\common.h">
+      <Filter>tsdemux</Filter>
+    </ClInclude>
+    <ClInclude Include="tsdemux\pat.h">
+      <Filter>tsdemux</Filter>
+    </ClInclude>
+    <ClInclude Include="tsdemux\pes.h">
+      <Filter>tsdemux</Filter>
+    </ClInclude>
+    <ClInclude Include="tsdemux\psi.h">
+      <Filter>tsdemux</Filter>
+    </ClInclude>
+    <ClInclude Include="tsdemux\ts.h">
+      <Filter>tsdemux</Filter>
+    </ClInclude>
+    <ClInclude Include="tsdemux\ts_stream.h">
+      <Filter>tsdemux</Filter>
+    </ClInclude>
+    <ClInclude Include="tsdemux\ts_psi_mgr.h">
+      <Filter>tsdemux</Filter>
+    </ClInclude>
+    <ClInclude Include="tsdemux\ts_psi_pat.h">
+      <Filter>tsdemux</Filter>
+    </ClInclude>
+    <ClInclude Include="tsdemux\ts_psi_pmt.h">
+      <Filter>tsdemux</Filter>
+    </ClInclude>
+    <ClInclude Include="tsdemux\pmt.h">
+      <Filter>tsdemux</Filter>
+    </ClInclude>
+    <ClInclude Include="tsdemux\descriptors.h">
+      <Filter>tsdemux</Filter>
+    </ClInclude>
+    <ClInclude Include="p2pblock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="p2ptrksrv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="base\aes.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="p2pm3u8.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="zlib\adler32.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\compress.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\crc32.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\deflate.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzclose.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzip.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzlib.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzread.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzwrite.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\infback.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inffast.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inflate.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inftrees.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\ioapi.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\iowin32.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\miniunz.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\mztools.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\trees.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\uncompr.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\unzip.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\zip.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\zutil.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="p2pcache.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="p2pmsg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="p2papp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="p2ppeer.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="p2psched.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="base\memstat.c">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2ptcpsrv.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="base\app_log.c">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\buffer.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\bufferevent.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\bufferevent_filter.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\bufferevent_pair.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\bufferevent_ratelim.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\bufferevent_sock.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\event.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\evmap.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\evthread.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\evutil.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\evutil_rand.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\evutil_time.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\listener.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\log.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\signal.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\strlcpy.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\evthread_win32.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\buffer_iocp.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\bufferevent_async.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\event_iocp.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\win32select.c">
+      <Filter>libevent\core</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\event_tagging.c">
+      <Filter>libevent\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\http.c">
+      <Filter>libevent\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\evdns.c">
+      <Filter>libevent\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="libevent\evrpc.c">
+      <Filter>libevent\extra</Filter>
+    </ClCompile>
+    <ClCompile Include="rudp\ikcp.c">
+      <Filter>rudp</Filter>
+    </ClCompile>
+    <ClCompile Include="rudp\rudp.c">
+      <Filter>rudp</Filter>
+    </ClCompile>
+    <ClCompile Include="rudp\rudppeer.c">
+      <Filter>rudp</Filter>
+    </ClCompile>
+    <ClCompile Include="rudp\rudpsess.c">
+      <Filter>rudp</Filter>
+    </ClCompile>
+    <ClCompile Include="rudp\rudpsock.c">
+      <Filter>rudp</Filter>
+    </ClCompile>
+    <ClCompile Include="rudp\rudpstat.c">
+      <Filter>rudp</Filter>
+    </ClCompile>
+    <ClCompile Include="rudp\rudpworker.c">
+      <Filter>rudp</Filter>
+    </ClCompile>
+    <ClCompile Include="p2phttpsrv.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="p2pmgmt.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="base\cJSON.c">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="tsdemux\ts_stream.c">
+      <Filter>tsdemux</Filter>
+    </ClCompile>
+    <ClCompile Include="tsdemux\ts_psi_mgr.c">
+      <Filter>tsdemux</Filter>
+    </ClCompile>
+    <ClCompile Include="tsdemux\ts_psi_pat.c">
+      <Filter>tsdemux</Filter>
+    </ClCompile>
+    <ClCompile Include="tsdemux\ts_psi_pmt.c">
+      <Filter>tsdemux</Filter>
+    </ClCompile>
+    <ClCompile Include="p2pblock.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="p2ptrksrv.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="base\aes.c">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="p2pm3u8.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<title>P2P Peer List</title>
+</head>
+<body>
+<table id="mainTable" border="1">
+	<thead>
+	<tr>
+		<th>CID</th>
+		<th>UID</th>
+		<th>LAN IP</th>
+		<th>LAN端口</th>
+		<th>WAN IP</th>
+		<th>WAN端口</th>
+		<th>Build Time</th>
+		<th>Alive Time</th>
+		<th>Upper UID</th>
+		<th>Recv Bytes/s</th>
+		<th>Start PackID</th>
+		<th>Max PackID</th>
+	</tr>
+	</thead>
+	<tbody>
+	</tbody>
+</table>
+<script>
+function funConvertUTCToUTC8(utc)
+{
+	d = new Date(utc);
+	utc8 = new Date(d.getTime());
+	return utc8.toLocaleString();
+}
+
+function loadData(){
+  $.ajax({
+	type: "get",
+	url: "/json/peerinfo",
+	dataType: "jsonp",
+	jsonp: 'callback',
+	jsonpCallback: "callback",
+	success: function(data) {
+		if (data.length==0){
+			$('#mainTable').find('tbody').html('<div style="width:100%;text-align: center">没有相关记录</div>');
+			return;
+		}
+		$('#mainTable').find('tbody').html('');
+		var tempStr = '';
+		for(var i = 0; i < data.length; i++) {
+			tempStr += "<tr>";
+			tempStr += '<td>' + data[i].cid + '</td>';
+			tempStr += '<td>' + data[i].uid + '</td>';
+			tempStr += '<td>' + data[i].lanip + '</td>';
+			tempStr += '<td>' + data[i].lanport + '</td>';
+			tempStr += '<td>' + data[i].wanip + '</td>';
+			tempStr += '<td>' + data[i].wanport + '</td>';
+			tempStr += '<td>' + funConvertUTCToUTC8(data[i].buildtime*1000) + '</td>';
+			tempStr += '<td>' + funConvertUTCToUTC8(data[i].logintime*1000) + '</td>';
+			tempStr += '<td>' + data[i].upperuid + '</td>';
+			tempStr += '<td>' + data[i].upperrate + '</td>';
+			tempStr += '<td>' + data[i].startpackid + '</td>';
+			tempStr += '<td>' + data[i].maxpackid + '</td>';
+			tempStr += '</tr>';
+		}
+
+		$('#mainTable').find('tbody').append(tempStr);
+	},
+	error: function(msg) {
+		console.log(msg);
+	}
+  });
+}
+loadData();
+</script>
+</body>
+</html>

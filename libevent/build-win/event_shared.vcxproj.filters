@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\buffer.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\bufferevent.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\bufferevent_filter.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\bufferevent_pair.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\bufferevent_ratelim.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\bufferevent_sock.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\event.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\evmap.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\evthread.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\evutil.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\evutil_rand.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\evutil_time.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\listener.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\log.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\signal.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\strlcpy.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\evthread_win32.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\buffer_iocp.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\bufferevent_async.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\event_iocp.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\win32select.c">
+      <Filter>Source Core</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\event_tagging.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\http.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\evdns.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\workspace\libevent-2.1.12-stable\evrpc.c">
+      <Filter>Source Extra</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Core">
+      <UniqueIdentifier>{92697BB9-FDED-339A-A6ED-078B330128BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Extra">
+      <UniqueIdentifier>{62BA6981-C9D3-3676-944B-7A89FE072831}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
